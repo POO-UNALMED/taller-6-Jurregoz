@@ -1,7 +1,5 @@
 package vehiculos;
 
-import estandar.Fabricante;
-
 public class Camioneta extends Vehiculo{
 	private boolean volco;
 	static int totalCamionetas = 0;

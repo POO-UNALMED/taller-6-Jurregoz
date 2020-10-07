@@ -1,7 +1,5 @@
 package vehiculos;
 
-import estandar.Fabricante;
-
 public class Automovil extends Vehiculo {
 	private int puestos;
 	static int totalAutoMovil = 0;

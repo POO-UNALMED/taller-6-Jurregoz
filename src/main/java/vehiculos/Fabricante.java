@@ -1,4 +1,4 @@
-package estandar;
+package vehiculos;
 
 import java.util.*;
 

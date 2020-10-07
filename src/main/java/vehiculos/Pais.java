@@ -1,9 +1,7 @@
-package estandar;
+package vehiculos;
 
 import java.util.ArrayList;
 import java.util.Collections;
-
-import vehiculos.Vehiculo;
 
 public class Pais {
 	private String nombre;

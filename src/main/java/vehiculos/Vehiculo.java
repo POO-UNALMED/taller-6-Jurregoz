@@ -1,7 +1,5 @@
 package vehiculos;
 
-import estandar.Fabricante;
-
 public class Vehiculo {
 	private String placa;
 	private int puertas;  

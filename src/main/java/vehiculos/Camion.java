@@ -1,7 +1,5 @@
 package vehiculos;
 
-import estandar.Fabricante;
-
 public class Camion extends Vehiculo {
 	private int ejes;
 	static int totalCamiones = 0;
