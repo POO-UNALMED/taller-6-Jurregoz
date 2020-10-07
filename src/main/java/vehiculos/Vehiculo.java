@@ -129,7 +129,7 @@ public class Vehiculo {
 	}
 	
 	
-	static String vehículosPorTipo() {
+	static String vehiculosPorTipo() {
 		return("Automoviles: " + Automovil.getTotalAutoMovil() +
 				"/n Camionetas: " + Camioneta.getTotalCamionetas() +
 				"/n Camiones: " + Camion.getTotalCamiones()
