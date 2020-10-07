@@ -26,15 +26,12 @@ public class Pais {
 	}
 	
 	static public Pais paisMasVendedor() {
-		Pais moda = null;
-		if(paises.size()>0) {
-			moda = paises.get(0);
-			for(int i = 1; i < paises.size(); i++) {
-				if(Collections.frequency(paises, paises.get(i)) > Collections.frequency(paises, moda)) {
+		Pais moda = paises.get(0);
+		for(int i = 1; i < paises.size(); i++) {
+			if(Collections.frequency(paises, paises.get(i)) > Collections.frequency(paises, moda)) {
 					moda = paises.get(i);
-				}
+					}
 			}
-		}
 		return moda;
 	}
 	

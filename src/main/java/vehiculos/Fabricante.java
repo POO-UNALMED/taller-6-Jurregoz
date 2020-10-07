@@ -33,15 +33,12 @@ public class Fabricante {
 	
 
 	static public Fabricante fabricaMayorVentas() {
-		Fabricante moda = null;
-		if(fabricantes.size()>0) {
-			moda = fabricantes.get(0);
+		Fabricante moda = fabricantes.get(0);
 			for(int i = 1; i < fabricantes.size(); i++) {
 				if(Collections.frequency(fabricantes, fabricantes.get(i)) > Collections.frequency(fabricantes, moda)) {
 					moda = fabricantes.get(i);
+					}
 				}
-			}
-		}
 		return moda;
 	}
 	
