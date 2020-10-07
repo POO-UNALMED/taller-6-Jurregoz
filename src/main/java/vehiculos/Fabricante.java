@@ -6,7 +6,7 @@ public class Fabricante {
 	private String nombre;
 	private Pais pais;
 	
-	static ArrayList<Fabricante> fabricantes = new ArrayList<Fabricante>();
+	static private ArrayList<Fabricante> fabricantes = new ArrayList<Fabricante>();
 	
 	public Fabricante(String nombre, Pais pais) {
 		this.nombre = nombre;
@@ -32,7 +32,7 @@ public class Fabricante {
 	}
 	
 
-	public Fabricante fabricaMayorVentas() {
+	static public Fabricante fabricaMayorVentas() {
 		Fabricante moda = fabricantes.get(0);
 		for(int i = 1; i < fabricantes.size(); i++) {
 			if(Collections.frequency(fabricantes, fabricantes.get(i)) > Collections.frequency(fabricantes, moda)) {

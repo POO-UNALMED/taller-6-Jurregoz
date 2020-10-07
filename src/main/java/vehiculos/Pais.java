@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class Pais {
 	private String nombre;
-	private ArrayList<Pais> paises = new ArrayList<Pais>();
+	static private ArrayList<Pais> paises = new ArrayList<Pais>();
 	private int totalUnidades; 
 	
 	
@@ -25,7 +25,7 @@ public class Pais {
 		totalUnidades ++;
 	}
 	
-	public Pais paisMasVendedor() {
+	static public Pais paisMasVendedor() {
 		Pais moda = paises.get(0);
 		for(int i = 1; i < paises.size(); i++) {
 			if(Collections.frequency(paises, paises.get(i)) > Collections.frequency(paises, moda)) {
