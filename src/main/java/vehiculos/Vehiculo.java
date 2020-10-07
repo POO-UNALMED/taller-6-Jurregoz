@@ -128,4 +128,12 @@ public class Vehiculo {
 		return(totalVehiculos);
 	}
 	
+	
+	static String vehículosPorTipo() {
+		return("Automoviles: " + Automovil.getTotalAutoMovil() +
+				"/n Camionetas: " + Camioneta.getTotalCamionetas() +
+				"/n Camiones: " + Camion.getTotalCamiones()
+				);
+				
+	}
 }

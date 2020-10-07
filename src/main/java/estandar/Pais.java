@@ -1,7 +1,15 @@
 package estandar;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
+import vehiculos.Vehiculo;
+
 public class Pais {
 	private String nombre;
+	private ArrayList<Pais> paises = new ArrayList<Pais>();
+	private int totalUnidades; 
+	
 	
 	public Pais(String nombre) {
 		this.nombre = nombre;
@@ -15,5 +23,19 @@ public class Pais {
 		this.nombre = nombre;
 	}
 	
+	public void addUnidad() {
+		totalUnidades ++;
+	}
+	
+	public Pais paisMasVendedor() {
+		Pais moda = paises.get(0);
+		for(int i = 1; i < paises.size(); i++) {
+			if(Collections.frequency(paises, paises.get(i)) > Collections.frequency(paises, moda)) {
+				moda = paises.get(i);
+			}
+		}
+		
+		return moda;
+	}
 	
 }
